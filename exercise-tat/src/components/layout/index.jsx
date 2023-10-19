@@ -1,7 +1,13 @@
-export default function Layout(){
+import "./layout.scss";
+
+export default function Layout({children}){
     return(
         <>
-        <div>hello</div>
+            <div className="bg-layout">
+                <div className="layout-container position-relative mx-auto">
+                <div>{children}</div>
+                </div>
+            </div>
         </>
     )
 }
